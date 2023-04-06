@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketPanelActivity">
+
+
+    <LinearLayout
+        android:id="@+id/statusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="165dp">
+
+        <ImageView
+            android:id="@+id/resultImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight=".3"
+            app:srcCompat="@drawable/sadicon" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:text="You did not receive any order yet!"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="455dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_corner_2"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/rounded_corner_3"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/rounded_corner_2"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/marketImage"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="8dp"
+                android:layout_weight=".2"
+                android:src="@drawable/ordericon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/orderDeliveryButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7.7dp"
+                android:layout_weight=".1944"
+                android:background="@drawable/rounded_corner_green"
+                android:text="Accept"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/refuseButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7.7dp"
+                android:layout_weight=".1944"
+                android:background="@drawable/rounded_corner_red"
+                android:text="Refuse"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/shop1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/apple1"
+                    tools:src="@drawable/apple1" />
+
+                <TextView
+                    android:id="@+id/countText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_corner_3"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/shop2"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/carrot1"
+                    tools:src="@drawable/carrot1" />
+
+                <TextView
+                    android:id="@+id/countText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_corner_3"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/shop3"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pepper1"
+                    tools:src="@drawable/pepper1" />
+
+                <TextView
+                    android:id="@+id/countText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_corner_3"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/shop4"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/spinach1"
+                    tools:src="@drawable/spinach1" />
+
+                <TextView
+                    android:id="@+id/countText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_corner_3"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/shop5"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/strawberry1"
+                    tools:src="@drawable/strawberry1" />
+
+                <TextView
+                    android:id="@+id/countText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_corner_3"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/shop6"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tomato1"
+                    tools:src="@drawable/apple1" />
+
+                <TextView
+                    android:id="@+id/countText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_corner_3"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

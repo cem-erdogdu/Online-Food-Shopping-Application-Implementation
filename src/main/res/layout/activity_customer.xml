@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Welcome to the customer panel!"
+            android:textSize="25sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/countLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/shop1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:src="@drawable/apple"
+                        tools:src="@drawable/apple" />
+
+                    <TextView
+                        android:id="@+id/countText1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/countLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/shop2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_margin="6dp"
+                        android:src="@drawable/carrot"
+                        tools:src="@drawable/carrot" />
+
+                    <TextView
+                        android:id="@+id/countText2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout android:id="@+id/countLayout3">
+
+                    <ImageButton
+                        android:id="@+id/shop3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:src="@drawable/pepper"
+                        tools:src="@drawable/pepper" />
+
+                    <TextView
+                        android:id="@+id/countText3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/countLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/shop4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_margin="6dp"
+                        android:src="@drawable/spinach"
+                        tools:src="@drawable/spinach" />
+
+                    <TextView
+                        android:id="@+id/countText4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/countLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/shop5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_margin="6dp"
+                        android:src="@drawable/strawberry"
+                        tools:src="@drawable/strawberry" />
+
+                    <TextView
+                        android:id="@+id/countText5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/countLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/shop6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_margin="6dp"
+                        android:src="@drawable/tomato"
+                        tools:src="@drawable/tomato" />
+
+                    <TextView
+                        android:id="@+id/countText6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/mainLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/selectionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/removeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="50sp"
+                    app:iconPadding="0dp" />
+
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textSize="50sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/purchase"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:insetTop="5dp"
+                android:insetBottom="0dp"
+                android:text="Purchase"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:layout_editor_absoluteY="184dp">
+
+        <ImageView
+            android:id="@+id/resultImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:padding="50dp"
+            android:src="@drawable/orderinprogress" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Succesfully completed the purchase! Waiting for an approval from the market."
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
